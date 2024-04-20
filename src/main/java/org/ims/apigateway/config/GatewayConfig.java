@@ -12,6 +12,8 @@ public class GatewayConfig {
         return builder.routes()
                 .route(r -> r.path("/sign-in")
                         .uri("http://localhost:8081"))
+                .route(r -> r.path("/api/products/**")
+                        .uri("http://localhost:8090/"))
                 .build();
     }
 }
