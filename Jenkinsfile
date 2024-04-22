@@ -7,7 +7,7 @@ pipeline {
       }
     }
 
-    stage('Print Files') {
+    stage('Print Files 2') {
       steps {
         sh 'ls -la'
       }
