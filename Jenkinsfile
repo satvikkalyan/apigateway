@@ -7,7 +7,7 @@ pipeline {
       }
     }
 
-    stage('Print Files 2') {
+    stage('Print Files Trigger Test') {
       steps {
         sh 'ls -la'
       }
