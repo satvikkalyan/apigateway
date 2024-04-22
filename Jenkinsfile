@@ -13,5 +13,11 @@ pipeline {
       }
     }
 
+    stage('Run Tests') {
+      steps {
+        sh 'sh \'mvn test\''
+      }
+    }
+
   }
 }
