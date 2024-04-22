@@ -1,21 +1,33 @@
 pipeline {
   agent any
   stages {
-    stage('Checkout Code') {
+    stage('Connect to EC2') {
       steps {
-        git(url: 'https://github.com/satvikkalyan/apigateway.git', branch: 'main', credentialsId: 'Satvik_Github')
+        sh 'echo "Hi"'
       }
     }
 
-    stage('Print Files Trigger Test') {
+    stage('Stop Running App') {
       steps {
         sh 'ls -la'
       }
     }
 
+    stage('Pull Latest Code') {
+      steps {
+        sh 'echo "Hi"'
+      }
+    }
+
     stage('Run Tests') {
       steps {
-        sh 'sh \'mvn test\''
+        sh 'echo "Hi"'
+      }
+    }
+
+    stage('Run Application') {
+      steps {
+        sh 'echo "Hi"'
       }
     }
 
