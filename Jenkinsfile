@@ -3,11 +3,11 @@ pipeline {
   stages {
     stage('Connect to EC2') {
       steps {
-        sh 'echo "Hi"'
+        sh 'pwd'
       }
     }
 
-    stage('Stop Running App') {
+    stage('Print Latest Files') {
       steps {
         sh 'ls -la'
       }
